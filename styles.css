@@ -1,0 +1,28 @@
+body {
+    padding-top:5rem;
+    font-size: 16px;
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size:20px;
+}
+
+label {
+    font-size: 18px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.yourAnswer, .yourResult {
+    font-size:20px;
+}
+
+#submit {
+    color: #FFF;
+    background:#212121;
+    padding: 10px 30px;
+}

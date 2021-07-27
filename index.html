@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>HTML form + Javascript grade calculator</title>
+</head>
+<body id="main">
+    <div id="formArea">
+        <h1>Please enter how many subjects you took, their names, and the marks you earned from them.</h1>
+        <form name="studentForm" id="studentForm">
+            <label for="numOfSubjects">Number of subjects taken</label><br><br>
+            <input id="numOfSubjects" label="Number of subjects" type="number"><br><br>
+            <label for="subjectNames">Subject Names</label><br><br>
+            <textarea name="textareaSubjectNames" id="subjectNames" rows="10" cols="40" placeholder="Subject names, one per line"></textarea><br>
+            <label for="marks">Marks</label><br><br>
+            <textarea name="textareaMarks" label="marks" id="marks" rows="10" cols="40" placeholder="Marks in numbers from 0-100, one per line respectively"></textarea><br><br>
+            <input id="submit" type="button" onclick="subjects();grades();" value="Calculate marks">
+        </form>
+    </div>
+    <!-- division to output user input values-->
+    <div id="message">
+    </div>
+    <!-- division to output grades based on user input values -->
+    <div id="grades">
+    </div>
+    <script src="subjects.js" type="text/javascript"></script>
+</body>
+</html>
